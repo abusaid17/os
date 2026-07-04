@@ -1,0 +1,5 @@
+read -p "Enter a string: " str
+
+length=${#str}
+
+echo "Length of the string: $length"
