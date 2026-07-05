@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-read n
+read -p "Enter factorial number: " n
 
 fact=1
 
