@@ -1,20 +1,14 @@
 # factorial
 
-read -p "enter a number to get factorial: " n
+#!/bin/bash
 
-num=$n
-factorial=1
+read n
 
-if (( num == 0 || num == 1)); then 
-    factorial=1
+fact=1
 
-else
-    while (( num > 0))
-    do
-    (( factorial = factorial * num ))
-    ((num--))
-    done
+for((i=1;i<=n;i++))
+do
+    fact=$((fact*i))
+done
 
-fi
-
-echo "Factorial of $n = $factorial"
+echo "Factorial = $fact"
