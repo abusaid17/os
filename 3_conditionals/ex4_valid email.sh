@@ -1,3 +1,5 @@
+#!/bin/bash
+
 read -p "Enter email: " email
 
 # Regular expression for a basic email validation

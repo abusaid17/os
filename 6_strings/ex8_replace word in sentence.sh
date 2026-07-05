@@ -1,3 +1,5 @@
+#!/bin/bash
+
 read -p "Enter a sentence: " sentence
 read -p "Word to replace: " old
 read -p "Replace with: " new

@@ -1,15 +1,12 @@
-echo "number 1: "
-read num1
+#!/bin/bash
 
-echo "number 2: "
-read num2
+read -p "Number 1: " num1
+read -p "Number 2: " num2
 
-
-echo "Enter arithmatic operator (+, -, *, /): "
-read operator
+read -p "Enter operator (+, -, *, /): " operator
 
 
-if ( "$operator" == "+" ); then
+if [ "$operator" == "+" ]; then
     result=$(( num1 + num2 ))
 
 elif [ "$operator" == "-" ]; then
@@ -22,8 +19,8 @@ elif [ "$operator" == "/" ]; then
     result=$(( num1 / num2 ))
 
 else
-    echo "Wrong operator!!"
+    echo "Invalid operator"
 fi
 
 echo ""
-echo "RESULT: $result"
+echo "Result: $result"

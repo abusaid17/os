@@ -1,8 +1,7 @@
-echo "num1: "
-read num1
+#!/bin/bash
 
-echo "num2: "
-read num2
+read -p "num1: " num1
+read -p "num2: " num2
 
 
 description="
@@ -16,9 +15,9 @@ description="
 Enter bitwise operator(see above):"
 
 echo "$description"
-read operator
+read -p "Enter operator: " operator
 
 
 result=$((num1 $operator num2))
 
-echo "RESULT = $result"
+echo "Result: $result"

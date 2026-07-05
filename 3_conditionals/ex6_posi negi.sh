@@ -1,7 +1,9 @@
+#!/bin/bash
+
 number=54
 
 if (( number < 0 )); then
-    echo "Negetive"
+    echo "Negative"
 
 elif (( number > 0 )); then
     echo "Positive"

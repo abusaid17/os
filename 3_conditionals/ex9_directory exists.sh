@@ -6,5 +6,5 @@ read -p "Enter directory: " directory
 if [ -d "$directory" ]; then
     echo "The directory '$directory' exists"
 else
-    echo "The diretory '$directory' does not exist."
+    echo "The directory '$directory' does not exist."
 fi

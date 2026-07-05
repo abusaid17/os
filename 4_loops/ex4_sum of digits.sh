@@ -1,4 +1,6 @@
-read -p "enter a number: " num
+#!/bin/bash
+
+read -p "Enter a number: " num
 
 sum=0
 
@@ -10,4 +12,4 @@ do
 done
 
 echo ""
-echo "RESULT: $sum"
+echo "Result: $sum"

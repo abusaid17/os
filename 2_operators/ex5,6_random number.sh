@@ -1,10 +1,8 @@
-echo "upper limit:"
-read MAX # 50
+#!/bin/bash
 
-echo "lower limit:"
-read MIN # 1
-
+read -p "Upper limit: " MAX
+read -p "Lower limit: " MIN
 
 echo ""
 echo "Random value in range: "
-echo $(( RANDOM % (MAX - MIN + 1) + MIN ))"
+echo $(( RANDOM % (MAX - MIN + 1) + MIN ))

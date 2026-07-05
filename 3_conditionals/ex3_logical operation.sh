@@ -1,50 +1,40 @@
-## logical operation
+#!/bin/bash
+
+read -p "First boolean (true/false): " bool1
+read -p "Second boolean (true/false): " bool2
+read -p "Enter Logical Operator (AND, OR, NOT): " operator
 
 
-echo "first boolean ( true/false ):"
-read bool1
-
-echo "first boolean ( true/false ):"
-read bool2
-
-
-echo "enter Logical Operator: (AND, OR, NOT):"
-read operator
-echo ""
-
-
-###
-# AND = TRUE if both are TRUE
-# OR = TRUE if any-one is TRUE
-# NOT = print the Reverse
-###
+# AND = true if both are true
+# OR = true if any one is true
+# NOT = print the reverse
 
 
 if [ "$operator" == "AND" ]; then
 
     if [ "$bool1" == "true" ] && [ "$bool2" == "true" ]; then
-        echo "RESULT= true"
+        echo "Result: true"
     else
-        echo "RESULT= false"
+        echo "Result: false"
     fi
 
 
 elif [ "$operator" == "OR" ]; then
 
     if [ "$bool1" == "true" ] || [ "$bool2" == "true" ]; then
-        echo "RESULT= true"
+        echo "Result: true"
     else
-        echo "RESULT= false"
+        echo "Result: false"
     fi
 
 elif [ "$operator" == "NOT" ]; then
 
     if [ "$bool1" == "true" ]; then
-        echo "RESULT= false"
+        echo "Result: false"
     else
-        echo "RESULT= true"
+        echo "Result: true"
     fi
 
 else
-    echo "Invalid operator!!"
+    echo "Invalid operator"
 fi

@@ -1,5 +1,5 @@
-echo "enter a word:"
+#!/bin/bash
 
-read w
+read -p "Enter a word: " w
 
 echo "The word you inputted: $w"
